@@ -19,7 +19,7 @@ function showNotification() {
     Notification.requestPermission(function (result) {
       if (result === "granted") {
         navigator.serviceWorker.ready.then((registration) => {
-          registration.showNotification("Something from performstats", {
+          registration.showNotification("Something from Statsperform", {
             body: "Notify me if you can",
             icon: "https://pbs.twimg.com/profile_images/1392386133032587264/R_8kcRAL_400x400.png",
           });
